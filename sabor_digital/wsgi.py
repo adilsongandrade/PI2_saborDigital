@@ -14,3 +14,6 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sabor_digital.settings')
 
 application = get_wsgi_application()
+
+# Adicione esta linha para compatibilidade com a Vercel
+app = application
