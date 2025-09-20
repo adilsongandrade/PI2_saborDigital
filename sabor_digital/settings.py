@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'sabor_digital.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'defaultdb',
         'USER': 'avnadmin',
         'PASSWORD': os.getenv('DB_PASSWORD'),
