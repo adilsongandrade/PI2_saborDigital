@@ -15,9 +15,5 @@
       "dest": "sabor_digital/wsgi.py"
     }
   ],
-  "env": {
-    "SECRET_KEY": "@secret_key",
-    "DB_PASSWORD": "@db_password"
-  },
   "installCommand": "pip install --no-cache-dir -r requirements.txt"
 }
