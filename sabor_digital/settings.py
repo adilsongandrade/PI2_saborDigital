@@ -35,8 +35,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 #DEBUG = True
 
 #ALLOWED_HOSTS = []
-DEBUG = False
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+
 ALLOWED_HOSTS = ['pi-2-sabor-digital.vercel.app']
+if DEBUG:
+    ALLOWED_HOSTS += ['127.0.0.1', 'localhost']
 
 
 # Application definition
