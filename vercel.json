@@ -15,6 +15,14 @@
       "dest": "staticfiles/$1"
     },
     {
+      "src": "/favicon.ico",
+      "dest": "staticfiles/usuarios/img/favicon.ico"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "staticfiles/usuarios/img/favicon.png"
+    },
+    {
       "src": "/(.*)",
       "dest": "sabor_digital/wsgi.py"
     }
