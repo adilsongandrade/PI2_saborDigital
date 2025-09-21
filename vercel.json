@@ -12,14 +12,13 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "usuarios/static/$1"
+      "dest": "staticfiles/$1"
     },
     {
       "src": "/(.*)",
       "dest": "sabor_digital/wsgi.py"
     }
-  ]
-,
+  ],
   "installCommand": "pip install --no-cache-dir -r requirements.txt",
   "buildCommand": "python manage.py collectstatic --no-input"
 }
