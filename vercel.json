@@ -12,15 +12,15 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "staticfiles/$1"
+      "dest": "/staticfiles/$1"
     },
     {
       "src": "/favicon.ico",
-      "dest": "staticfiles/usuarios/img/favicon.ico"
+      "dest": "/staticfiles/usuarios/img/favicon.ico"
     },
     {
       "src": "/favicon.png",
-      "dest": "staticfiles/usuarios/img/favicon.png"
+      "dest": "/staticfiles/usuarios/img/favicon.png"
     },
     {
       "src": "/(.*)",
