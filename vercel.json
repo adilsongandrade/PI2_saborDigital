@@ -28,5 +28,5 @@
     }
   ],
   "installCommand": "pip install --no-cache-dir -r requirements.txt",
-  "buildCommand": "python manage.py collectstatic --no-input"
+  "buildCommand": "mkdir -p staticfiles && python manage.py collectstatic --no-input"
 }
