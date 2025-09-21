@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/favicon.ico",
-      "dest": "/static/usuarios/img/favicon.ico"
+      "dest": "/staticfiles/usuarios/img/favicon.ico"
     },
     {
       "src": "/static/(.*)",
