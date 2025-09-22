@@ -1,15 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
     <title>Ficha Técnica - La Hermosa Parrilla</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/static/img/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">    
+    <meta charset="utf-8">
   </head>
 
   <body>
@@ -24,7 +21,6 @@
           <input type="password" name="senha" required><br>
           <input class="botao" type="submit" value="Enviar">
         </form>
-
         {% if error_message %}
           <p class="senhaErrada">{{ error_message }}</p>
         {% else %}
@@ -34,3 +30,4 @@
     </div>
   </body>
 </html>
+
