@@ -3,31 +3,17 @@
   "builds": [
     {
       "src": "sabor_digital/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/static/img/favicon.ico"
-    },
-    {
-      "src": "/favicon.png",
-      "dest": "/static/img/favicon.png"
+      "dest": "/staticfiles/$1"
     },
     {
       "src": "/(.*)",
       "dest": "sabor_digital/wsgi.py"
     }
-  ],
-  "installCommand": "pip install --no-cache-dir -r requirements.txt",
-  "buildCommand": ""
+  ]
 }
