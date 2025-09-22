@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "sabor_digital/wsgi.py",
@@ -12,15 +13,15 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/staticfiles/$1"
+      "dest": "/static/$1"
     },
     {
       "src": "/favicon.ico",
-      "dest": "/staticfiles/usuarios/img/favicon.ico"
+      "dest": "/static/img/favicon.ico"
     },
     {
       "src": "/favicon.png",
-      "dest": "/staticfiles/usuarios/img/favicon.png"
+      "dest": "/static/img/favicon.png"
     },
     {
       "src": "/(.*)",
@@ -28,5 +29,5 @@
     }
   ],
   "installCommand": "pip install --no-cache-dir -r requirements.txt",
-  "buildCommand": "mkdir -p staticfiles && python manage.py collectstatic --no-input"
+  "buildCommand": ""
 }

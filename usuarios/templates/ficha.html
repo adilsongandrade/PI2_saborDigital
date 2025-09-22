@@ -1,12 +1,15 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Ficha Técnica - La Hermosa Parrilla</title>
-    <link rel="stylesheet" href="{% static 'usuarios/css/style.css' %}">
-        <link rel="icon" type="image/png" href="{% static 'usuarios/img/favicon.png' %}">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'usuarios/img/favicon.ico' %}">    
     <meta charset="utf-8">
+    <title>Ficha Técnica - La Hermosa Parrilla</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
   </head>
   <body>
     <div class="container">
@@ -87,7 +90,7 @@
           <div class="item">
             <p>Imagem da receita:</p>           
             <img 
-              src="{% static 'usuarios/img/' %}{{ dados_receita.nome_receita }}.jpg" 
+              src="/static/img/{{ dados_receita.nome_receita }}.jpg" 
               alt="Imagem da receita {{ dados_receita.nome_receita }}" 
               style="width: 200px; height: 200px; border-radius: 8px;">
           </div>
